@@ -1,0 +1,12 @@
+<div style="border:2px solid black; margin:10px;">
+  <ul *ngFor="let note of notes">  
+    <li>
+        <p><span> Note: </span> {{note.text}}</p>
+        <p><span>Author: </span> {{note.author}}</p>
+        <p><span>Created on: </span>{{note.createdAt | date : 'medium'}}</p>
+        <p>{{note._id}}</p>
+        <input type="submit" value="Edit">
+        <input type="submit" value="Delete">
+    </li>
+  </ul>
+</div>

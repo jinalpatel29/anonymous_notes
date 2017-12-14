@@ -1,0 +1,8 @@
+<fieldset>
+  <legend>Create Note</legend>
+  <form (submit)="onSubmit()" >
+    Author: <input type="text" name="author" [(ngModel)]="newNote.author" placeholder="Please enter author here"><br>
+    Note: <input type="text" name="text" [(ngModel)]="newNote.text" placeholder="Please enter note here">  <br>
+    <button type="submit">Create Note</button>
+  </form>
+</fieldset>
