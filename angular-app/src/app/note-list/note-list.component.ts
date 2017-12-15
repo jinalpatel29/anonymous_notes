@@ -10,6 +10,10 @@ export class NoteListComponent implements OnInit {
   notes;
   constructor(private _service:NoteService) { }
 
+  remove(id){
+    this._service.deleteNote(id)
+  }
+
   ngOnInit() {
     this._service.noteObserver.subscribe(
       (result) => this.notes = result   

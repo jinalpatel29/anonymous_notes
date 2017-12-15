@@ -5,8 +5,11 @@
         <p><span>Author: </span> {{note.author}}</p>
         <p><span>Created on: </span>{{note.createdAt | date : 'medium'}}</p>
         <p>{{note._id}}</p>
-        <input type="submit" value="Edit">
-        <input type="submit" value="Delete">
+     
+        <a [routerLink]="['/edit',note._id]">Edit</a>
+      
+        <button (click)="remove(note._id)" type="submit" >Delete
+          </button>
     </li>
   </ul>
 </div>

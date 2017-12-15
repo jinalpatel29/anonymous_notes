@@ -8,7 +8,6 @@ app.use(express.static(__dirname + '/angular-app/dist'));
 
 var parser = require('body-parser');
 app.use(parser.json());
-app.use(parser.json());
 app.use(parser.urlencoded({extended: true}));
 
 var mongoose = require('mongoose');

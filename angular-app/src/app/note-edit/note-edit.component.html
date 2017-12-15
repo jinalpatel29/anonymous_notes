@@ -1,3 +1,9 @@
-<p>
-  note-edit works!
-</p>
+<fieldset>
+    <legend>Update Note</legend>
+    <form (submit)="onSubmit()" >
+      Author: <input type="text" name="author" [(ngModel)]="note.author" ><br>
+      Note: <input type="text" name="text" [(ngModel)]="note.text" >  <br>
+      <button type="submit">Update Note</button>
+    </form>
+    {{note | json}}
+  </fieldset>
