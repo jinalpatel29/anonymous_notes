@@ -3,9 +3,13 @@ anonymous_notes using MEAN stack
 This application includes create note, update note, and delete note
 
 Backend : Express
+
 Frontend : Angular 4.0.0
+
 Database : MongoDB 3.6  Note : PUSH operation in this version have some bugs so you might have to use workaround for that
+
 Node.js : Interpreter
+
 
  It might be helpful to think of Node as just an interpreter similar to what’s available in your browser’s developer tools. 
  Node will parse for methods that your browser will not, particularly those related to HTTP requests and responses.
